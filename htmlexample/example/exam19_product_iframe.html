@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 안내 페이지</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>전자제품 상새 안내</h1>
+    <p>
+        상품 목록에서 상세보기를 클릭하면 아래 iframe 영역에 상품 설명이 표시됩니다.
+    </p>
+    <table>
+        <caption>상품 목록</caption>
+        <tr>
+            <th>이미지</th>
+            <th>상품명</th>
+            <th>가격</th>
+            <th>상세정보</th>
+        </tr>
+        <tr>
+            <td><img src="https://dseu.co.kr/data/goods/1/2025/03/1435_2025031921540423.jpg" alt="노트북 이미지" width="300"></td>
+            <td>노트북</td>
+            <td>1,200,000원</td>
+            <td><a href="./laptop.html" target="detailFrame">상세보기</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202505/14/6ecdc07f-96ca-4bdf-bb97-73520ec62f0d.jpg" alt="태블릿 이미지" width="300"></td>
+            <td>태블릿</td>
+            <td>700,000원</td>
+            <td><a href="./tablet_detail.html" target="detailFrame">상세보기</a></td>
+        </tr>
+    </table>
+    <hr>
+    <h2>상품 상세 설명</h2>
+    <iframe src="./laptop.html" name="detailFrame" title="상품 상세 설명 영역" width="700" height="300"></iframe>
+</body>
+</html>
