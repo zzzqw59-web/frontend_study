@@ -1,0 +1,39 @@
+h1 {
+    color: #5C4033;
+}
+
+h2 {
+    color: #2B6CB0;
+    margin-top: 25px;
+}
+
+/* 인접 형제 선택자 */
+h2 + p {
+    background-color: #FFF3CD;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* 형제 선택자 */
+h2 ~ p {
+    color: #5C4033;
+    line-height: 1.6;
+}
+
+/* 인접 형제 선택자 */
+.important + p {
+    color: red;
+    font-weight: bold;
+}
+
+/* 형제 선택자 */
+.important ~ ul {
+    border: 2px solid #C75B39;
+    padding: 15px;
+    width: 400px;
+    background-color: #FFF7E8;
+}
+
+li {
+    margin: 6px;
+}
