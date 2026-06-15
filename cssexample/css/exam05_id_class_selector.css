@@ -1,0 +1,24 @@
+#title {
+    font-size: 28px;
+    color: white;
+    background-color: #4B2E2E;
+    padding: 12px;
+    text-align: center;
+    width: 360px;
+}
+
+.menu {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5C4033;
+    margin: 8px;
+}
+
+.price {
+    color: #2F855A;
+}
+
+.notice {
+    font-size: 14px;
+    color: #777777;
+}
