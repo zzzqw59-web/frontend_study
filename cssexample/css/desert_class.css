@@ -2,6 +2,7 @@ body {
     background-color: antiquewhite;
     font-family: "Do Hyeon", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    background: url(../image/image.png) no-repeat fixed center center / cover;
 }
 
 .header-section {
@@ -31,6 +32,12 @@ body {
     padding-left: 39px;
     color: pink;
     font-size: 1.4rem;
+}
+
+.benefit-list {
+    list-style: none;
+    color: white;
+    font-size: 1.1rem;
 }
 
 strong {
