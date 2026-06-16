@@ -1,0 +1,39 @@
+* {
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+p {
+    color: #2B6CB0;
+    font-size: 18px;
+}
+
+.notice {
+    color: #2F855A;
+    font-weight: bold;
+}
+
+#important-notice {
+    color: #C75B39;
+    font-size: 24px;
+}
+
+h1 {
+    color: gray;
+}
+
+h1 {
+    color: #8B5E3C;
+}
+
+.notice-box {
+    color: #444444;
+    border: 2px solid #D6BFA8;
+    background-color: #FFF7E8;
+    padding: 15px;
+    width: 650px;
+}
+
+.warning {
+    color: red !important; 
+}

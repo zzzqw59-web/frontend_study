@@ -1,0 +1,41 @@
+body {
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    color: #2F855A;
+}
+
+h3 {
+    color: #2B6CB0;
+    margin-top: 25px;
+}
+
+h3 + p {
+    background-color: #E6F7FF;
+    padding: 10px;
+    font-weight: bold;
+}
+
+h3 ~ p {
+    color: #444444;
+    line-height: 1.6;
+}
+
+.routine + ul {
+    background-color: #FFF7E8;
+    border-left: 5px solid #C75B39;
+    padding: 15px;
+    width: 380px;
+}
+
+.routine ~ .tip {
+    color: #8B5E3C;
+    font-style: italic;
+    font-weight: bold;
+}
+
+li {
+    margin: 6px;
+}

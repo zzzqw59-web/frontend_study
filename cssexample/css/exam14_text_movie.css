@@ -1,0 +1,43 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 30px;
+    text-align: center;
+}
+
+
+h1 {
+    color: rgb(9, 65, 34);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: rgb(73, 19, 19);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.movie-info {
+    border: none;
+    background-color: rgb(231, 227, 221);
+    width: 50rem;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    font-size: 1.1rem;
+}
+
+.english-title {
+    color: rgb(194, 100, 37);
+    font-size: 20px;
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.highlight {
+    font-weight: bold;
+    text-decoration: underline;
+}
