@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:   rgb(255, 211, 153);
+    margin: 0;
+    padding: 25px;
+    font-family: "Do Hyeon";
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    color: brown;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.intro-section {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    word-break: keep-all;
+}
+
+.table-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+.table-section caption {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: rgb(155, 11, 11);
+    font-weight: bold;
+}
+
+tr, td, th {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+th {
+    font-size: 1.4rem;
+    background-color: rgb(84, 101, 253);
+    color: white;
+}
+
+td {
+    font-size: 1.2rem;
+}
+
+.list-section {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.list-section h2 {
+    font-size: 1.5rem;
+}
+
+.process-list li {
+    list-style-type: none;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.notice {
+    text-align: center;
+    color: red;
+    font-size: 1.3rem;
+}
