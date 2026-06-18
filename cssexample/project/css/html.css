@@ -1,0 +1,46 @@
+.index-main h2 {
+    /* font-size: 1.8rem; */
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.card {
+    padding: 50px;
+    border: 1px solid rgb(118, 118, 167);
+    background-color: white;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.character {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(180, 156, 218);
+    /* background-color: pink; */
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.character:hover {
+    background-color: pink;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+

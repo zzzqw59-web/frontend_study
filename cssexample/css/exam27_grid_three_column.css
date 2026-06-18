@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F6FFF4;
+    color: #2F3A2F;
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    padding: 30px;
+    background-color: #5F8D4E;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+main {
+    width: 1100px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+
+    align-items: start;
+}
+
+.pet-menu, .pet-content, .pet-info {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #C7E2B5;
+    border-radius: 12px;
+}
+
+.pet-menu {
+    background-color: #EFFBE7;
+}
+
+.pet-content {
+    background-color: #FFFFFF;
+}
+
+.pet-info {
+    background-color: #FFF4E6;
+}
+
+h2 {
+    margin-top: 0;
+    color: #5F8D4E;
+}
+
+p {
+    line-height: 1.7;
+}
+
+ul, ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.notice {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FFF0EB;
+    border-left: 5px solid #E07A5F;
+    line-height: 1.7;
+}
+
+footer {
+    padding: 20px;
+    background-color: #3A5A40;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
