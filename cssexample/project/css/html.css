@@ -41,6 +41,8 @@
 
 .card p {
     font-size: 1rem;
+    color: gray;
+    font-weight: bold;
 }
 
 
