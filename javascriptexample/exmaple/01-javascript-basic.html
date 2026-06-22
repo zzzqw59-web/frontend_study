@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/01-javascript-basic.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="chapter">JavaScript</p>
+        <h1>3.1 JavaScript의 시작</h1>
+        <p>
+            HTML은 웹 페이지의 구조를 정의하고, CSS는 그 구조에 스타일을 입히는 역할을 한다.
+            하지만 HTML과 CSS만으로는 사용자 입력 처리, 데이터 변경, 복잡한 상호작용 같은 
+            동적인 구현에는 한계가 있다. 이러한 동적인 기능은 주로 자바스크립트가 담당한다.
+        </p>
+
+    </header>
+
+    <main>
+        <section class="lesson-section">
+            <div class="example-box">
+                <p class="example-title">실행 예제</p>
+                <button type="button" onclick="alert('인라인 방식으로 실행한 알림창입니다.')">인라인 알림창 출력</button>
+                <button type="button" onclick="console.log('인라인 방식으로 콘솔에 출력했습니다.')">인라인 콘솔 출력</button>
+                <div id="result" class="output-box">결과가 이곳에 출력된다.</div>
+            </div>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제</p>
+                <button type="button" onclick="showInternalMessage()">내부 알림창 출력</button> <br>
+                <button type="button" id="welcomeButton">인사말 출력</button>
+                <p id="welcomeMessage">버튼을 클릭해보세요.</p>
+            </div>
+
+            <article class="method-card">
+                <h3>external 방식</h3>
+                <p>
+                    자바스크립트 코드를 별도의 파일로 작성하고, HTML 문서에서 연결하는 방식이다.
+                </p>
+
+                <div class="example-box">
+                    <p class="example-title">실행 예제</p>
+                    <button type="button" onclick="showExternalMessage()">외부 알림창 출력</button>
+                </div>
+            </article>
+
+            <article class="method-card">
+                <h2>이벤트 기반 처리 예제</h2>
+                <p>아래 예제는 버튼 클릭 이벤트가 발생했을 때 박스의 배경색을 변경하는 예제이다.</p>
+
+                <div class="example-box">
+                    <p class="example-title">실행 예제</p>
+                    <div id="box" aria-label="색상 변경 박스"></div>
+                    <div class="button-group">
+                        <button type="button" onclick="changeColor('red')">red</button>
+                        <button type="button" onclick="changeColor('yellow')">yellow</button>
+                        <button type="button" onclick="changeColor('skyblue')">skyblue</button>
+                        <button type="button" onclick="resetColor()">초기화</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="../js/01-javascript-basic.js"></script>
+    <script>
+        function showInternalMessage() {
+            alert("내부 script 태그에서 실행한 알림창입니다.")
+        }
+        const welcomeButton = document.querySelector("#welcomeButton");
+        const welcomeMessage = document.querySelector("#welcomeMessage");
+        welcomeButton.addEventListener("click", function() {
+            welcomeMessage.style.color = 'red';
+            welcomeMessage.textContent = "안녕하세요, 자바스크립트 이벤트가 실행되었습니다.";
+        });
+    </script>
+</body>
+</html>

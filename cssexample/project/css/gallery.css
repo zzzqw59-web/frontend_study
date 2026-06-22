@@ -1,5 +1,4 @@
 .gallery-main {
-    width: 1000px;
     margin: 30px auto;
 }
 
@@ -51,4 +50,14 @@
 .gallery p {
     margin: 0;
     line-height: 1.7;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        padding: 18px;
+    }
 }
