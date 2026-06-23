@@ -10,26 +10,133 @@
     <header class="page-header">
         <p class="chapter">JavaScript</p>
         <h1>변수와 자료형</h1>
-        <p>이 페이지에서 실습할 내용을 간단히 설명한다.</p>
+        <p>자바스크립트에서 변수는 데이터를 저장하는 공간이고, 자료형은 변수에 저장되는 값의 종류를 의미한다.
+            자바스크립트는 변수 선언 시 자료형을 고정하지 않고, 저장되는 값에 따라 자료형이 결정된다.
+        </p>
     </header>
 
     <main>
         <section class="lesson-section">
-            <h2>소제목</h2>
-            <p>개념 설명을 작성한다.</p>
+            <h2>변수 선언</h2>
+            <p>변수는 데이터를 저장하기 위해 사용하는 이름이 있는 공간이다.
+                자바스크립트에서는 var, let, const를 사용하여 변수를 선언할 수 있다.
+                현재는 주로 let, const를 사용한다.
+            </p>
 
-            <pre>
-                <code>
-                    예제 코드를 작성한다.
-                </code>
-            </pre>
+            <div class="note-box">
+                <p><strong>개념정리</strong></p>
+                <p>
+                    let은 값을 다시 대입할 수 있는 변수를 선언할 때 사용한다.
+                    같은 이름으로 재선언 할 수 없고, 블록 레벨 스코프를 가진다.
+                </p>
+                <p>
+                    const는 값을 다시 대입하지 않을 변수를 선언할 때 사용한다.
+                    같은 이름으로 재선언 할 수 없고, 재할당 할 수 없으며, 선언과 동시에 초기화 해야한다.
+                </p>
+            </div>
+            <div class="example-box">
+                <p class="example-title">실행 예제</p>
+                <button type="button" onclick="variableTest()">변수 확인</button>
+                <div id="variableResult" class="output-box">결과가 이 곳에 출력된다.</div>
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <h2>기본 자료형</h2>
+            <p>
+                기본 자료형은 하나의 값을 직접 표현하는 자료형이다.
+                대표적으로 문자열, 숫자, 논리값, undefined, null, bigint가 있다.
+            </p>
+
+            <div class="feature-list">
+                <article>
+                    <h3>string</h3>
+                    <p>
+                        문자열을 나타내는 자료형이다.
+                        작은 따옴표, 큰 따옴표, 백틱으로 작성할 수 있다.
+                    </p>
+                </article>
+                <article>
+                    <h3>number</h3>
+                    <p>
+                        정수와 실수 모두 나타내는 자료형이다.
+                    </p>
+                </article>
+                <article>
+                    <h3>boolean</h3>
+                    <p>
+                        true, false 값을 가지는 논리 자료형이다.
+                    </p>
+                </article>
+                <article>
+                    <h3>undefined / null</h3>
+                    <p>
+                        undefined는 값이 할당되지 않은 상태이고, null은 값이 없음을 의도적으로 표현한 것이다.
+                    </p>
+                </article>
+            </div>
 
             <div class="example-box">
                 <p class="example-title">실행 예제</p>
-                <button type="button" onclick="함수명()">확인하기</button>
-                <div id="result" class="output-box">결과가 이곳에 출력된다.</div>
+                <button type="button" onclick="primitiveTypeTest()">기본 자료형 확인</button>
+                <div id="primitiveResult" class="output-box">결과가 이 곳에 출력된다.</div>
+            </div>
+        </section>
+        
+        <section class="lesson-section">
+            <h2>참조 자료형</h2>
+            <p>참조 자료형은 여러 값을 하나의 구조로 묶어 다룰 때 사용한다.
+                대표적으로 배열, 객체, 함수가 있다.
+                배열과 객체의 typeof 결과는 object이고,
+                함수의 typeof 결과는 function 이다.
+            </p>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제</p>
+                <button type="button" onclick="referenceTypeTest()">참조 자료형 확인</button>
+                <div id="referenceResult" class="output-box">결과가 이 곳에 출력된다.</div>
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <h2>typeof 연산자</h2>
+            <p>
+                typeof 연산자는 값의 자료형을 문자열로 반환한다.
+                변수에 어떤 종류의 값이 저장이 되어 있는지 확인할 때 사용한다.
+            </p>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제</p>
+                <button type="button" onclick="typeOfTest()">typeof 확인</button>
+                <div id="typeOfResult" class="output-box">결과가 이 곳에 출력된다.</div>
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <h2>형변환</h2>
+            <p>
+                형변환은 값의 자료형을 다른 자료형으로 바꾸는 것을 의미한다.
+                사용자 입력값은 문자열로 처리되는 경우가 많으므로, 계산이 필요한 경우 숫자로 변환해야 한다.
+                자바스크립트에서는 Number(), String(), Boolean() 등을 활용하여 자료형을 변환할 수 있다.
+            </p>
+
+            <div class="example-box">
+                <div class="example-title">실행 예제</div>
+                <input type="text" id="convertInput" placeholder="값을 입력하세요.">
+                <button type="button" onclick="conversionTest()">형 변환 확인</button>
+
+                <div id="conversionResult" class="output-box">결과가 이 곳에 출력된다.</div>
+            </div>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제</p>
+                <input type="text" id="firstNumber"> +
+                <input type="text" id="secondNumber">
+                <button type="button" onclick="sum()">더하기</button>
+                <div id="sumResult" class="output-box">결과가 이 곳에 출력된다.</div>
             </div>
         </section>
     </main>
+    <script src="../js/04-datatype.js"></script>
 </body>
 </html>
