@@ -2,6 +2,11 @@ function showMessage() {
     document.querySelector("#messageResult").textContent = "showMessage()함수가 호출되었습니다."
 }
 
+function clickCount() {
+    const count = Number(btn.textContent);
+    btn.textContent = count + 1;
+}
+
 function scoreCheck() {
     const kor = document.querySelector(".korScore");
     const eng = document.querySelector(".engScore");
@@ -127,4 +132,21 @@ const colorResult = document.querySelector(".colorResult");
 colorButton.addEventListener("click", function () {
     const color = colorInput.value;
     colorResult.style.color = color;
+})
+
+const sum = function(number1, number2, callback) {
+    const result = number1 + number2;
+
+    callback(result);
+
+    return result;
+};
+
+const runCallback = document.getElementById("runCallback");
+const callbackResult = document.getElementById("callbackResult");
+
+runCallback.addEventListener("click", function () {
+    sum(10, 20, function(result) {
+        callbackResult.textContent = "콜백 함수의 결과: " + result;
+    })
 })
