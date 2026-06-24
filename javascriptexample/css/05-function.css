@@ -1,0 +1,20 @@
+#quote {
+    margin: 0 0 12px;
+    padding: 10px;
+    border-left: 4px solid #777;
+    background-color: white;
+    font-weight: bold;
+}
+
+#fontColor {
+    width: 70px;
+    height: 36px;
+    padding: 2px;
+}
+
+.colorInput {
+    width: 1000px;
+    height: 1000px;
+    border: none;
+    cursor: pointer;
+}
