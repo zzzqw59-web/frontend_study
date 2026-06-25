@@ -231,13 +231,15 @@ const jsonData = '{"name":"홍길동", "age":30}';</code></pre>
 
                 <table class="company-table" id="languageTable">
                     <thead>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>내용</th>
-                        <th>조회수</th>
-                        <th>등록일</th>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>내용</th>
+                            <th>조회수</th>
+                            <th>등록일</th>
+                        </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody class="languageTableBody"></tbody>
                 </table>
 
             </div>
@@ -253,6 +255,15 @@ const jsonData = '{"name":"홍길동", "age":30}';</code></pre>
                 객체 안에 정의된 함수를 메서드라고 하며,
                 객체의 데이터와 기능을 함께 묶어 사용할 수 있다.
             </p>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제 - 객체 리터럴과 메서드</p>
+                <button type="button" id="objectLiteralButton">객체 리터럴 실행</button>
+                <div id="objectLiteralResult" class="output-box">결과가 이 곳에 출력된다.</div>
+                <div id="objectLiteralMemberResult" class="output-box">
+                    결과가 이 곳에 출력된다.
+                </div>
+            </div>
 
  
         </section>
@@ -283,6 +294,17 @@ const jsonData = '{"name":"홍길동", "age":30}';</code></pre>
                 </tbody>
             </table>
 
+            <div class="example-box">
+                <p class="example-title">실행 예제 - JSON 문자열 변환</p>
+                <button type="button" id="convertButton">변환 결과 확인</button>
+
+                <p class="example-sub">JSON.stringify() 결과</p>
+                <div id="stringResult" class="output-box">결과가 이 곳에 출력된다.</div>
+
+                <p class="example-sub">JSON.parse() 결과</p>
+                <div id="jsonResult" class="output-box">결과가 이 곳에 출력된다.</div>
+            </div>
+
 
         </section>
 
@@ -294,6 +316,16 @@ const jsonData = '{"name":"홍길동", "age":30}';</code></pre>
                 추가된 배열 데이터는 반복문을 사용하여 화면에 출력할 수 있다.
             </p>
 
+            <div class="example-box">
+                <p class="example-title">실행 예제 - 과목 목록 추가하기</p>
+                <input type="text" id="subjectInput" placeholder="과목명 입력">
+                <button type="button" id="addSubject">추가</button>
+
+                <ul id="subjectList" class="output-box subject-list">
+                    <!-- 추가된 과목이 이 곳에 출력된다.-->
+                </ul>
+            </div>
+
 
         </section>
 
@@ -303,6 +335,26 @@ const jsonData = '{"name":"홍길동", "age":30}';</code></pre>
                 배열 안의 객체 구조는 목록 데이터를 추가하거나 출력할 때도 사용할 수 있다.
                 아래 예제는 도서 객체를 배열에 추가한 뒤 테이블에 출력하는 예제이다.
             </p>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제 - 도서 목록 추가하기</p>
+                <input type="text" class="title" placeholder="제목">
+                <input type="text" class="author" placeholder="저자">
+                <input type="date" name="listDate" id="listDate">
+                <button type="button" class="addBook">추가</button>
+
+                <table class="company-table" id="bookTable">
+                    <thead>
+                        <tr>
+                            <th>제목</th>
+                            <th>저자</th>
+                            <th>출판연도</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bookTableBody"></tbody>
+                </table>
+            </div>
+
 
         </section>
     </main>
