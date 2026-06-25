@@ -127,9 +127,6 @@
                 <button type="button" class="changeButton">이미지 변경</button>
                 <div class="imgResult output-box">현재 이미지는 고양이입니다.</div>
             </div>
-
-
-
         </section>
 
         <section class="lesson-section">
@@ -139,7 +136,43 @@
                 또한 <code>preventDefault()</code>를 사용하면 링크 이동이나 폼 제출처럼 HTML 요소가 기본으로 수행하는 동작을 막을 수 있다.
             </p>
 
+            <div class="example-box">
+                <p class="example-title">실행 예제</p>
+                <input type="text" id="textInput" placeholder="내용을 입력하세요.">
+                <div id="inputResult" class="output-box">입력한 내용이 이 곳에 출력된다.</div>
+            </div>
 
+            <form action="" id="joinForm" class="join-form">
+                <input type="text" id="userName" placeholder="이름 입력">
+                <button type="submit">제출</button>
+            </form>
+            <div id="formResult" class="output-box">폼 제출 결과가 이 곳에 출력된다.</div>
+            <a href="https://www.naver.com" id="goNaver">네이버로 이동</a>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제 - 실시간 글자수 세기(이벤트: input)</p>
+                <input type="text" class="inputBox" placeholder="문장을 입력하세요.">
+
+                <div class="inputResult output-box">현재 글자수: 0</div>
+            </div>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제 - 카드 뒤집기(이벤트: mouseover, mouseout)</p>
+
+                <div class="card">우리가 수업시간이 자는 이유는?</div>
+                <div class="cardResult output-box">카드에 마우스를 올려보세요</div>
+            </div>
+
+            <div class="example-box">
+                <p class="example-title">실행 예제 - 테마 선택하기</p>
+                <select name="tema" id="tema-select">
+                    <option value="select" selected>테마 선택</option>
+                    <option value="light">밝은 테마</option>
+                    <option value="dark">어두운 테마</option>
+                    <option value="green">초록 테마</option>
+                </select>
+                <div class="temaResult">선택한 테마가 적용됩니다.</div>
+            </div>
         </section>
     </main>
     <script src="../js/11-event.js"></script>

@@ -1,0 +1,101 @@
+.data-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.data-table th, .data-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #F0F0F0;
+    text-align: center;
+}
+
+.concept-table td:first-child {
+    width: 22%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FAFAFA;
+}
+
+.example-sub {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.company-info {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #CCC;
+}
+
+.company-info h3 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.company-year {
+    margin: 0 0 20px;
+    color: #555;
+}
+
+.company-year span {
+    font-weight: bold;
+    color: #000;
+}
+
+.info-row {
+    display: flex;
+    gap: 30px;
+    padding: 14px 0;
+    border-top: 1px solid #E0E0E0;
+}
+
+.info-row strong {
+    width: 130px;
+    flex-shrink: 0;
+    color: #333;
+}
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-list li::before {
+    content: "· ";
+    color: #555;
+}
+
+.company-table {
+    border-collapse: collapse;
+}
+
+.company-table th, .company-table td {
+    border: 1px solid #CCC;
+    padding: 10px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.company-table th {
+    background-color: #F2F2F2;
+    font-weight: bold;
+}
+
+.subject-list li {
+    margin: 6px 0 6px 28px;
+    line-height: 1.5;
+}
