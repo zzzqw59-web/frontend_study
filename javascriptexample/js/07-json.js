@@ -311,3 +311,25 @@ addBook.addEventListener("click", function() {
 
     renderingList();
 })
+
+const courseForm = document.querySelector("#courseForm");
+const courseResult = document.querySelector("#courseResult");
+
+courseForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const studentName = document.querySelector("#studentName").value.trim();
+    const courseName = document.querySelector("#courseName").value;
+    const courseType = document.querySelector("input[name='courseType']:checked");
+
+    if (studentName === "" || courseName === "" || courseType === null) {
+        courseResult.textContent = "이름, 강의명, 수강 형태를 모두 선택하세요.";
+        return;
+    }
+
+    courseResult.innerHTML = `
+        <p><strong>수강생:</strong> ${studentName}</p>
+        <p><strong>신청 강의:</strong> ${courseName}</p>
+        <p><strong>수강 형태:</strong> ${courseType.value}</p>
+    `;
+});
